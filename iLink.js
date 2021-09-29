@@ -10,9 +10,20 @@ const inputCity = document.getElementById('input_city')
 const inputDate = document.getElementById('input_date')
 const submitButton = document.getElementById('form_button_inactive')
 const fileInput = document.getElementById('file_input_container')
+const checkMobile = document.getElementById('body')
 const idArray = []
 
+if (checkMobile.offsetWidth<=750) {
+  console.log(123123123);
+  document.getElementById('prev').className = "prevM"
+  document.getElementById('next').className = "nextM"
 
+} else if (checkMobile.offsetWidth>750){
+  console.log(4444444);
+
+  document.getElementById('prev').className = "prev"
+  document.getElementById('next').className = "next"
+}
 const smoothLinks = document.querySelectorAll('a[href^="#"]');
 for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function (e) {

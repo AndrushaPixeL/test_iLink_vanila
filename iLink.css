@@ -398,33 +398,6 @@ a {
     .slide_title_container {
         display: flex;
     }
-    .slide_title {
-        position: absolute;
-          
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: 800 !important;
-        font-size: 40px !important;
-        line-height: 48px !important;
-        text-align: center !important;
-        
-        color: #FFFFFF !important;
-        left: 0 !important;
-        top: 0 !important;
-        transform: translate(-50%, -50%);
-    }
-    .slide_title_small {
-        position: absolute !important;
-
-        font-weight: 500 !important;
-        font-size: 15px !important;
-        line-height: 24px !important;
-        text-align: center !important;
-
-        left: 0 !important;
-        top: 0 !important;
-        transform: translate(-50%, -50%);
-    }
     .slider {
         display: flex !important;
         justify-content: center !important;
@@ -444,23 +417,47 @@ a {
         padding-bottom: 32px;
     }
     .slider_dots {
-        position: absolute;
         width: 12px !important;
         height: 12px !important;
-        top: 95%;
+        top: 95% !important;
         margin: 0 !important;
         display: flex !important;
         justify-content: center !important;
-        left: 50%;
-        bottom: 32px;
-        left: 50%;
-        bottom: 32px;
     }
-    .prevMob {
-
+    .prevM {
+        position: absolute;
+        top: 90%;
+        left: 10%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
     }
-    .nextMob {
-        
+    .nextM {
+        cursor: pointer;
+        position: absolute;
+        top: 90%;
+        right: 10%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+    }
+    .slide_title {
+        font-size: 56px !important;
+        line-height: 72px !important;
+    }
+    .slide_title_small{
+        font-size: 18px !important;
+        line-height: 32px !important;
     }
 }
 .imageNoMobile{
@@ -799,6 +796,7 @@ p {
     left: 50%;
     top: 40%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .slide_title_small {
